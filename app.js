@@ -10,3 +10,12 @@ let newParagraph = document.querySelector("div");
 // accessing the parent of the new created element
 
 newParagraph.append(createElement); //appending the element so it appears on the page
+
+// remove element
+let paragraph = document.getElementById("paragraph");
+paragraph.parentElement.removeChild(paragraph);
+
+
+let importent = document.querySelector(".paragraph");
+
+importent.innerHTML = " <br> this is just a <strong>Dummy </strong> text"
