@@ -19,3 +19,14 @@ paragraph.parentElement.removeChild(paragraph);
 let importent = document.querySelector(".paragraph");
 
 importent.innerHTML = " <br> this is just a <strong>Dummy </strong> text"
+
+// adding event
+
+let changeText = document.getElementById("read");
+
+function clickedText(){ 
+    changeText.innerHTML = "thank <b >you</b>";
+    console.log(changeText);
+}
+
+changeText.addEventListener("click", clickedText);
