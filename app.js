@@ -30,3 +30,17 @@ function clickedText(){
 }
 
 changeText.addEventListener("click", clickedText);
+
+// listening to input
+
+let textEntered = document.querySelector("input");
+
+function displayEnteredText(){;
+    let inputext = textEntered.value;
+    console.log(inputext);
+
+}
+
+textEntered.addEventListener("input", displayEnteredText);
+
+
