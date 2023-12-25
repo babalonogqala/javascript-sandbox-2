@@ -1,11 +1,29 @@
 // character counter
-let inputElement = document.querySelector('input')
-let rating = document.getElementById('rate')
+// let inputElement = document.querySelector('input')
+// let rating = document.getElementById('rate')
 
-function countChar () {
-  let name = inputElement.value
-  let number = name.length
-  console.log(number)
+// function countChar () {
+//   let name = inputElement.value
+//   let number = name.length
+//   console.log(number)
+// }
+
+// inputElement.addEventListener('input', countChar)
+
+// first step is to declare the variables of the input and span char
+let userInputChar = document.getElementById('product-name')
+let numOfchar = document.getElementById('remaining-chars')
+let arrayProduct = ['apple', 'banana', 'pineapple']
+
+// third step is to create a funtion that will track the char number and display changes(remaining char)
+function calculateChar (Product, array) {
+  //
+  let trackInput = Product[array].value //take the value of the input
+  let charLength = trackInput.length
+
+  let numOfcharElement = charLength - 60
+
+  numOfchar.textContent = numOfcharElement
 }
-
-inputElement.addEventListener('input', countChar)
+// second step is to add event to the input element and track it
+userInputChar.addEventListener('input', calculateChar)
