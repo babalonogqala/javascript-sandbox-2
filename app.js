@@ -1,46 +1,40 @@
-
-
 // new paragraph
-// create new element 
- let createElement = document.createElement("p");
+// create new element
+let createElement = document.createElement('p')
 //  assign the content of the element
-    createElement.textContent = "my new paragraph";
+createElement.textContent = 'my new paragraph'
 
-let newParagraph = document.querySelector("div");
+let newParagraph = document.querySelector('div')
 // accessing the parent of the new created element
 
-newParagraph.append(createElement); //appending the element so it appears on the page
+newParagraph.append(createElement) //appending the element so it appears on the page
 
 // remove element
-let paragraph = document.getElementById("paragraph");
-paragraph.parentElement.removeChild(paragraph);
+let paragraph = document.getElementById('paragraph')
+paragraph.parentElement.removeChild(paragraph)
 
+let importent = document.querySelector('.paragraph')
 
-let importent = document.querySelector(".paragraph");
-
-importent.innerHTML = " <br> this is just a <strong>Dummy </strong> text"
+importent.innerHTML = ' <br> this is just a <strong>Dummy </strong> text'
 
 // adding event
 
-let changeText = document.getElementById("read");
+let changeText = document.getElementById('read')
 
-function clickedText(){ 
-    changeText.innerHTML = "thank <b >you</b>";
-    console.log(changeText);
+function clickedText () {
+  changeText.innerHTML = 'thank <b >you</b>'
+  console.log(changeText)
 }
 
-changeText.addEventListener("click", clickedText);
+changeText.addEventListener('click', clickedText)
 
 // listening to input
 
-let textEntered = document.querySelector("input");
+let textEntered = document.querySelector('input')
 
-function displayEnteredText(){;
-    let inputext = textEntered.value;
-    console.log(inputext);
-
+function displayEnteredText () {
+  let inputext = textEntered.length
+  console.log(inputext)
 }
 
-textEntered.addEventListener("input", displayEnteredText);
-
-
+textEntered.addEventListener('input', displayEnteredText)

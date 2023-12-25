@@ -1,12 +1,11 @@
-
 // character counter
-let inputElement = document.querySelector("input");
-let rating = document.getElementById("rate");
+let inputElement = document.querySelector('input')
+let rating = document.getElementById('rate')
 
-function countChar(){
-    let name = inputElement.value;
-    let number = name.length;
-    console.log(number);
+function countChar () {
+  let name = inputElement.value
+  let number = name.length
+  console.log(number)
 }
 
-inputElement.addEventListener("input", countChar);
+inputElement.addEventListener('input', countChar)
