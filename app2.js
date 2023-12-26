@@ -20,14 +20,9 @@ function calculateChar (Product, array) {
   let trackInput = userInputChar.value //take the value of the input
   let charLength = trackInput.length
 
-  let classColor = (numOfchar.style.color = 'blue')
   let numOfcharElement = charLength - 60
 
   numOfchar.textContent = numOfcharElement
-  if ((numOfcharElement = 10)) {
-    numOfcharElement.classColor
-  } else {
-  }
 }
 // second step is to add event to the input element and track it
 userInputChar.addEventListener('input', calculateChar)
